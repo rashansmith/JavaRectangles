@@ -1,9 +1,7 @@
 /********************************/
 /***** Name: Rashan Smith *******/
-/*** Apprenda Coding Challenge **/
 /********************************/
 
-package apprendaCodingChallenge;
 public class rectangles {
 	
 	// defining 2 main points of a rectangle - bottomRight & topLeft
