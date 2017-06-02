@@ -3,7 +3,6 @@
 /********************************/
 
 
-package apprendaCodingChallenge;
 
 public class Point {
 	int x;
