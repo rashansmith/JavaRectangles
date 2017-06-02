@@ -2,7 +2,6 @@
 /***** Name: Rashan Smith *******/
 /********************************/
 
-package apprendaCodingChallenge;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import java.awt.Color;
