@@ -13,6 +13,8 @@ public class rectangles {
 		this.bottomRight = bottomRight;
 	}
 	
+	// Detecting intersecting rectangles
+	// Containment counts as an intersection
 	public boolean intersect(rectangles two) {
 		if (this.topLeft.y < two.bottomRight.y || 
 			this.bottomRight.y > two.topLeft.y ||
@@ -25,6 +27,7 @@ public class rectangles {
 		return false;
 	}
 	
+	// Detecting if one rectangle contains another
 	public boolean containment(rectangles two) {
 		if (this.topLeft.x < two.topLeft.x & 
 	        this.bottomRight.x > two.bottomRight.x &
@@ -36,7 +39,8 @@ public class rectangles {
 		System.out.println("They are not contained");
 		return false;
 	}
-		
+	
+	// Detecting if one rectangle is adjacent to another
 	public boolean adjacent(rectangles two) {
 		if(this.topLeft.x == two.bottomRight.x || this.bottomRight.x == two.topLeft.x  //if on left or right of rectangle
 		   && this.topLeft.y <= two.topLeft.y //if same size or less than of rectangle
